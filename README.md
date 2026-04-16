@@ -35,3 +35,26 @@ During this project, I focused on working with real datasets and transforming ra
 - CTR alone is not a strong predictor of revenue  
 - Significant variation in ROAS across platforms  
 - Some campaigns achieve high conversions with lower cost  
+
+
+
+project-name/
+│
+├── data/
+│   ├── raw_data.csv
+│   └── cleaned_data.csv
+│
+├── sql/
+│   ├── data_cleaning.sql
+│   └── analysis_queries.sql
+│
+├── excel/
+│   └── dashboards.xlsx
+│
+├── powerbi/
+│   └── dashboard.pbix
+│
+├── notebooks/
+│   └── analysis.ipynb
+│
+└── README.md
