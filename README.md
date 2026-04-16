@@ -17,11 +17,15 @@ During this project, I focused on working with real datasets and transforming ra
 -Statistical Analysis (Hypothesis Testing & Regression) using Excel
 -Data Visualization & Dashboard Creation using Power BI
 -Insights Presentation using PowerPoint
+
+
 📊 Deliverables
 -Interactive Power BI Dashboard
 -PowerPoint Presentation summarizing key insights
 -SQL scripts for data cleaning and analysis
 -Excel file including statistical analysis (T-test & Regression)
+
+
 📈 Key Insights
 -Higher ad spend does not guarantee higher profitability
 -CTR alone is not a strong predictor of revenue
