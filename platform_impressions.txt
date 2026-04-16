@@ -1,0 +1,5 @@
+select platform,sum(impressions
+) as total_imperessions
+from ADs_performance
+group by platform
+order by total_imperessions  DESC

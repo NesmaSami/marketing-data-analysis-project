@@ -1,0 +1,10 @@
+select campaign_type,
+AVG(CPC)
+ as total_clicks
+from Ads_performance
+group by campaign_type
+
+
+order by AVG(CPC) desc
+
+

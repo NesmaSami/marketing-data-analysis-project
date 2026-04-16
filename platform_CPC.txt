@@ -1,0 +1,4 @@
+select platform,AVG(CPC) as AVG_CPC
+from Ads_performance
+group by platform
+order by AVG_CPC DESC

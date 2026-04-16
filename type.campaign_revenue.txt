@@ -1,0 +1,11 @@
+select campaign_type,
+SUM(revenue) 
+ as total_revenue
+
+from Ads_performance
+group by campaign_type
+
+
+order by total_revenue desc
+
+

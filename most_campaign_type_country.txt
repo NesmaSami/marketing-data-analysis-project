@@ -1,0 +1,18 @@
+WITH ranked AS (
+    SELECT
+        campaign_type,
+        country,
+        COUNT(*) AS country_count,
+        ROW_NUMBER() OVER (
+            PARTITION BY campaign_type
+            ORDER BY COUNT(*) DESC
+        ) AS rn
+    FROM ads_performance
+    GROUP BY campaign_type, country
+)
+SELECT 
+    campaign_type,
+    country AS most_campaign_type_industry,
+    country_count
+FROM ranked
+WHERE rn = 1;

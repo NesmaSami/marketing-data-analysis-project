@@ -1,0 +1,11 @@
+select campaign_type,
+AVG(CPA)
+ as AVG_CPA
+
+from Ads_performance
+group by campaign_type
+
+
+order by AVG(CPA)desc
+
+

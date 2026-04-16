@@ -1,0 +1,5 @@
+select platform,sum(clicks)
+ as total_clicks
+from ADs_performance
+group by platform
+order by total_clicks  DESC

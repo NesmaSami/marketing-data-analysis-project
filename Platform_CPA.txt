@@ -1,0 +1,5 @@
+select platform,AVG(CPA)
+ as AVG_CPA
+FROM Ads_performance
+group by platform
+order by AVG_CPA  DESC

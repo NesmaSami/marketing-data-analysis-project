@@ -1,0 +1,64 @@
+select date
+from ads_performance
+where date is null
+
+select platform
+from ads_performance
+where platform is null
+
+select campaign_type
+from Ads_performance
+where campaign_type is null
+
+select industry		
+from ads_performance
+where industry is null 
+
+select country
+from ads_performance
+where country is null
+
+select impressions
+from Ads_performance
+where impressions is null
+
+select Clicks	
+from ads_performance
+where clicks is null 
+
+select CTR
+from ads_performance
+where CTR is null
+
+select CPC
+from Ads_performance
+where CPC is null
+
+
+select Ad_spend	
+from ads_performance
+where Ad_spend is null 
+
+select conversions
+from ads_performance
+where conversions is null
+
+
+select CPA
+from Ads_performance
+where CPA is null
+
+select revenue
+from ads_performance
+where revenue
+is null 
+
+select ROAS
+from ads_performance
+where ROAS is null
+
+
+
+
+
+

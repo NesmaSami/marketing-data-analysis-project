@@ -1,0 +1,4 @@
+select platform,sum(revenue) as total_revenue
+from Ads_performance
+group by platform
+order by total_revenue DESC

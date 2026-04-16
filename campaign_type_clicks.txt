@@ -1,0 +1,10 @@
+select campaign_type,
+sum(impressions
+) as total_impressions
+from Ads_performance
+group by campaign_type
+
+
+order by total_impressions desc
+
+

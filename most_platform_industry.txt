@@ -1,0 +1,18 @@
+WITH ranked AS (
+    SELECT
+        platform,
+        industry,
+        COUNT(*) AS industry_count,
+        ROW_NUMBER() OVER (
+            PARTITION BY platform 
+            ORDER BY COUNT(*) DESC
+        ) AS rn
+    FROM ads_performance
+    GROUP BY platform, industry
+)
+SELECT 
+    platform,
+    industry AS most_platform_industry,
+    industry_count
+FROM ranked
+WHERE rn = 1;

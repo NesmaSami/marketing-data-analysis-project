@@ -1,0 +1,11 @@
+select platform,
+avg(ROAS) 
+ as AVG_ROAS
+
+from Ads_performance
+group by platform
+
+
+order by AVG_ROAS desc
+
+

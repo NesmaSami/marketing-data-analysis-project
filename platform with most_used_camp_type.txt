@@ -1,0 +1,16 @@
+with ranked as(
+select 
+platform,campaign_type,
+count(*) as campaign_count,
+row_number () over (partition by platform order by count(*) desc) as rn
+from ads_performance
+group by platform,campaign_type)
+select 
+platform,
+campaign_type as must_use_campaign_type , 
+
+campaign_count
+from ranked
+where rn=1
+
+

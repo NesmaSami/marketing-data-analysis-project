@@ -1,0 +1,5 @@
+select platform,AVG(CTR)
+ as AVG_CTR
+FROM Ads_performance
+group by platform
+order by AVG_CTR  DESC

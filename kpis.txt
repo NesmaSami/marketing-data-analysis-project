@@ -1,0 +1,9 @@
+
+
+SELECT 
+    SUM(impressions) AS total_impressions,
+    SUM(clicks) AS total_clicks,
+    SUM(ad_spend) AS total_spend,
+    SUM(conversions) AS total_conversions,
+    SUM(revenue) AS total_revenue
+FROM Ads_performance;

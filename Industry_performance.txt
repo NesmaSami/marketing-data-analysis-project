@@ -1,0 +1,16 @@
+SELECT
+    industry,
+    SUM(impressions) AS impressions,
+    SUM(clicks) AS clicks,
+    SUM(ad_spend) AS spend,
+    SUM(conversions) AS conversions,
+    SUM(revenue) AS revenue,
+
+    AVG(CTR) AS CTR,
+    AVG(CPC)AS  CPC,
+    AVG(CPA) AS CPA,
+    AVG(ROAS)AS ROAS
+
+FROM Ads_performance
+GROUP BY industry
+ORDER BY revenue DESC;

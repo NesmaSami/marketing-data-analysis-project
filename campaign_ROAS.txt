@@ -1,0 +1,11 @@
+select campaign_type,
+avg(ROAS) 
+ as AVG_ROAS
+
+from Ads_performance
+group by campaign_type
+
+
+order by AVG_ROAS desc
+
+

@@ -1,0 +1,3 @@
+bulk insert Ads_performance
+from 'D:\nes\advertising\global_ads_performance_dataset.csv'
+with(fieldterminator=',', rowterminator='\n', firstrow=2)

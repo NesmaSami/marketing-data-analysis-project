@@ -1,0 +1,4 @@
+CREATE TABLE Ads_performance
+(Date DATE,	Platform VARCHAR(50) ,	Campaign_type VARCHAR(50),	Industry VARCHAR(50),
+Country VARCHAR(50),	Impressions INT,	Clicks INT,	CTR DECIMAL(10,6),	CPC DECIMAL(10,2),	Ad_spend DECIMAL(10,2),
+Conversions INT,	CPA DECIMAL (10,2),	Revenue DECIMAL(10,2),	ROAS DECIMAL(10,2))

@@ -1,0 +1,11 @@
+select 
+case
+when ROAS >=1  then  'Profitable'
+else 'Not profitable'
+end as profitability,
+COUNT(*) as count 
+from Ads_performance
+group by case
+when ROAS >=1  then  'Profitable'
+else 'Not profitable'
+end 

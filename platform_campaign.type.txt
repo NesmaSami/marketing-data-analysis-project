@@ -1,0 +1,7 @@
+SELECT
+    platform,
+    campaign_type,
+    COUNT(*) AS campaign_count
+FROM Ads_performance
+GROUP BY platform, campaign_type
+ORDER BY platform, campaign_count DESC;

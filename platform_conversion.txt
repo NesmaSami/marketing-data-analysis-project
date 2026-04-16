@@ -1,0 +1,4 @@
+select platform,count(conversions) as total_conversions
+from ADs_performance
+group by platform
+order by total_conversions  DESC

@@ -1,0 +1,12 @@
+select campaign_type,
+sum(conversions)
+ as total_conversions
+
+from Ads_performance
+group by campaign_type
+
+
+order by sum(conversions
+) desc
+
+
